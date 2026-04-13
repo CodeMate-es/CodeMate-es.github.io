@@ -1,0 +1,4 @@
+baseURL = 'https://www.codemate.es/'
+languageCode = 'es-es'
+title = 'CodeMate'
+theme = "mana"
