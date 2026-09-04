@@ -1,4 +1,4 @@
-baseURL = 'https://www.codemate.es/'
+baseURL = 'https://codemate-es.github.io/'
 defaultContentLanguage = 'es'
 defaultContentLanguageInSubdir = false
 title = 'CodeMate'
