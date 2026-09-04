@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números aleatorios</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 90vh;
+      font-family: Arial, sans-serif;
+      color: white;
+      transition: background-color 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div id="numero"></div>
+
+  <script>
+    const numeroEl = document.getElementById("numero");
+    const colores = ["red", "green", "blue", "gold"];
+
+    function mostrarNumero() {
+      const numero = Math.floor(Math.random() * 20) + 1;
+      const color = colores[Math.floor(Math.random() * colores.length)];
+      numeroEl.textContent = numero;
+      document.body.style.backgroundColor = color;
+    }
+
+    // Mostrar de inicio 
+    mostrarNumero();
+    // Cambiar cada 3 segundos
+    setInterval(mostrarNumero, 3000);
+
+    // Prevenir suspensión (Wake Lock API)
+    let wakeLock = null;
+
+    async function activarWakeLock() {
+      try {
+        if ('wakeLock' in navigator) {
+          wakeLock = await navigator.wakeLock.request('screen');
+          console.log("Wake Lock activado");
+          wakeLock.addEventListener("release", () => {
+            console.log("Wake Lock liberado");
+          });
+        } else {
+          console.log("Wake Lock API no soportada, usar workaround si necesario.");
+        }
+      } catch (err) {
+        console.error(`${err.name}, ${err.message}`);
+      }
+    }
+
+    // Activar al cargar
+    activarWakeLock();
+
+    // Reintentar si se pierde el foco
+    document.addEventListener("visibilitychange", () => {
+      if (wakeLock !== null && document.visibilityState === "visible") {
+        activarWakeLock();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -6,6 +6,21 @@
     <description>Recent content on CodeMate</description>
     <generator>Hugo</generator>
     <language>es-es</language>
+    <lastBuildDate>Mon, 31 Aug 2026 18:53:29 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sobre Nosotros</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 31 Aug 2026 18:53:29 +0200</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Bla bla bla</description>
+    </item>
+    <item>
+      <title>Primer Post</title>
+      <link>http://localhost:1313/posts/primer-post/</link>
+      <pubDate>Mon, 31 Aug 2026 18:37:34 +0200</pubDate>
+      <guid>http://localhost:1313/posts/primer-post/</guid>
+      <description>Este es un primer post de CodeMate.es</description>
+    </item>
   </channel>
 </rss>

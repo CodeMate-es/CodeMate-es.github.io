@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CodeMate</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on CodeMate</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 31 Aug 2026 18:37:34 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primer Post</title>
+      <link>http://localhost:1313/posts/primer-post/</link>
+      <pubDate>Mon, 31 Aug 2026 18:37:34 +0200</pubDate>
+      <guid>http://localhost:1313/posts/primer-post/</guid>
+      <description>Este es un primer post de CodeMate.es&#xA;Por que un blog a estas alturas Sabes eso de que siempre has querido tiempo y ganas para hacer algo nuevo&amp;hellip; Pues ese tiempo nunca nos llegó.&#xA;Siempre hay excusas y problemas para no escribir o terminar el estilo de una web a la que, cuando está terminada, no encuentras nada que añadirle.&#xA;Ahora por suerte, el objetivo no es la página en sí, el objetivo es hacer cosas nuevas y diferentes, hablar de los temas que nos gustan y a ser posible, dedicarle el mínimo tiempo posible.</description>
+    </item>
+  </channel>
+</rss>

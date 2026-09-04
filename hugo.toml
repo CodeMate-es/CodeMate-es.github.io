@@ -1,4 +1,53 @@
 baseURL = 'https://www.codemate.es/'
-languageCode = 'es-es'
+defaultContentLanguage = 'es'
+defaultContentLanguageInSubdir = false
 title = 'CodeMate'
 theme = "mana"
+contentDir = 'content'
+
+[params]
+  description = "¿Tomamos un descanso?"
+  footerText = ""  # Optional
+  # Hero section title (optional - defaults to site.Title)
+  # heroTitleLine1 = "Code  # First line of hero title
+  # heroTitleLine2 = "Mate"    # Second line of hero title (optional)
+  defaultTheme = "dark" # o "dark"
+  disableThemeToggle = true
+
+[params.avatar]
+  [params.avatar.home]
+    assetPath = "images/monkeys.png"
+  [params.avatar.about]
+    assetPath = "images/monkeys.png"
+
+[[menus.main]]
+  name = 'Inicio'
+  pageRef = '/'
+  weight = 10
+
+[[menus.main]]
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 20
+
+[[menus.main]]
+  name = 'Etiquetas'
+  pageRef = '/tags'
+  weight = 30
+
+[[menus.main]]
+  name = 'Sobre nosotros'
+  url = '/about/'
+  weight = 40
+
+[pagination]
+  pageSize = 10  # Number of posts per page (default: 10)
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[params.favicons]
+  ico = "/favicon/favicon.ico"
+  png = "/favicon/favicon.png"
+  png16 = "/favicon/favicon-16x16.png"
+  android512 = "/favicon/android-chrome-512x512.png"
